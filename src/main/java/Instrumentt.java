@@ -3,8 +3,10 @@ public class Instrumentt implements ISell {
     private String type;
     private String soundMaker;
     private String buildMaterial;
+    private int purchasePrice;
+    private int salePrice;
 
-    public Instrumentt(String type, String soundMaker, String buildMaterial) {
+    public Instrumentt(String type, String soundMaker, String buildMaterial, int purchasePrice, int salePrice) {
 
         this.type = type;
         this.soundMaker = soundMaker;
@@ -21,8 +23,24 @@ public class Instrumentt implements ISell {
         return buildMaterial;
     }
 
+    public int getSalePrice() {
+        return salePrice;
+    }
+
+    public int getPurchasePrice() {
+        return purchasePrice;
+    }
+
     public int calculateMarkup(){
-        this.purchasePrice = purchasePrice;
+
+        if (salesPrice > purchasePrice){
+        return "MarkUp is "; {
+            salePrice - purchasePrice;
+            }
+        else "We made a lose";
 
     }
+}
+
+
 }

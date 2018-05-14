@@ -10,7 +10,7 @@ public class TrumpetTest {
     @Before
 
     public void before (){
-        trumpet = new Trumpet("Wind", "3 Valves", "Brass");
+        trumpet = new Trumpet("Wind", "3 Valves", "Brass", 150, 215);
     }
 
     @Test
