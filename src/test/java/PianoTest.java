@@ -9,13 +9,20 @@ public class PianoTest {
 
     @Before
 
-    public void before (){
-        piano = new Piano("88 Keys");
+    public void before() {
+        piano = new Piano("Percussion", "88 Keys", "Wood");
     }
 
     @Test
 
-    public void hasSoundMaker(){
+    public void hasSoundMaker() {
         assertEquals("88 Keys", piano.getSoundMaker());
+    }
+
+
+    @Test
+
+    public void canPlay() {
+        assertEquals("Plink Plonk", piano.play());
     }
 }

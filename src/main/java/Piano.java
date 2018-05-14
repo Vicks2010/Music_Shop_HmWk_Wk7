@@ -1,13 +1,18 @@
-public class Piano {
+public class Piano extends Instrumentt{
 
-    String soundMaker;
+//    String soundMaker;
 
 
-    public Piano(String soundMaker) {
-        this.soundMaker = soundMaker;
+    public Piano(String type, String soundMaker, String buildMaterial) {
+//        this.soundMaker = soundMaker;
+        super(type, soundMaker, buildMaterial);
     }
 
     public String getSoundMaker() {
-        return soundMaker;
+        return "88 Keys";
+    }
+
+    public String play(){
+        return "Plink Plonk";
     }
 }

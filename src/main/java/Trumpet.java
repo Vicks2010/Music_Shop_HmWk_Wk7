@@ -1,14 +1,20 @@
-public class Trumpet {
+public class Trumpet extends Instrumentt{
 
-    String soundMaker;
+//    String soundMaker;
 
 
-public Trumpet(String soundMaker) {
-    this.soundMaker = soundMaker;
+public Trumpet(String type, String soundMaker, String buildMaterial) {
+//    this.soundMaker = soundMaker;
+
+    super(type, soundMaker, buildMaterial);
 }
 
     public String getSoundMaker() {
-        return soundMaker;
+        return "3 Valves";
+    }
+
+    public String play(){
+        return "Barrrrr";
     }
 }
 

@@ -1,13 +1,19 @@
-public class Sax {
+public class Sax extends Instrumentt{
 
-    String soundMaker;
+//    String soundMaker;
 
 
-    public Sax(String soundMaker) {
-        this.soundMaker = soundMaker;
+    public Sax(String type, String soundMaker, String buildMaterial) {
+//        this.soundMaker = soundMaker;
+        super(type, soundMaker, buildMaterial);
     }
 
     public String getSoundMaker() {
-        return soundMaker;
+        return "Singlereed Mouthpiece";
+    }
+
+    public String play(){
+        return "Blarrrin";
     }
 }
+

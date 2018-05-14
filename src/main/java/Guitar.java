@@ -1,13 +1,18 @@
-public class Guitar {
+public class Guitar extends Instrumentt{
 
-    String soundMaker;
+//    String soundMaker;
 
 
-    public Guitar(String soundMaker) {
-        this.soundMaker = soundMaker;
+    public Guitar(String type, String soundMaker, String buildMaterial) {
+//        this.soundMaker = soundMaker;
+        super(type, soundMaker, buildMaterial);
     }
 
     public String getSoundMaker() {
-        return soundMaker;
+        return "6 Metal Strings";
+    }
+
+    public String play(){
+        return "twang";
     }
 }

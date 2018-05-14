@@ -10,7 +10,7 @@ public class SaxTest {
         @Before
 
         public void before (){
-            sax = new Sax("SingleReed Mouthpiece");
+            sax = new Sax("Wind", "SingleReed Mouthpiece", "Brass");
         }
 
         @Test
